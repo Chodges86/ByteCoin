@@ -13,12 +13,14 @@ protocol CoinManagerDelegate {
     func didFailWithError(error: Error)
 }
 
+
+
 struct CoinManager {
     
     var delegate: CoinManagerDelegate?
     
     let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
-    let apiKey = "YOUR_API_KEY_HERE"
+    let apiKey = "0E88F2E1-F4C2-488F-8CF7-376793F3B0A7"
 
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     
